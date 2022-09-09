@@ -43,6 +43,14 @@ full_attack_per_interval = who_plays(attack, 8, 2, 40, 2)
 full_defence_per_interval = who_plays(defence, 8, 3, 40, 2)
 
 for a in range(0, len(full_attack_per_interval)):
-    print(full_attack_per_interval[a]["interval"],
+     print(full_attack_per_interval[a]["interval"],
+          "defence: ",
+          full_defence_per_interval[a]["playing"],
+          "attack: ",
           full_attack_per_interval[a]["playing"],
-          full_defence_per_interval[a]["playing"])
+          '*** bench: ',
+          "defence",
+          full_defence_per_interval[a]["bench"],
+          "attack: ",
+          full_attack_per_interval[a]["bench"]
+         )
